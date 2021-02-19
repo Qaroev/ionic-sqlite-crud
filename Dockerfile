@@ -55,7 +55,8 @@ RUN mkdir $ANDROID_HOME/licenses && \
 
 #FILES DELETION
 RUN rm -rf /tmp/* /var/cache/apk/*
-
+#IPCONFIG
+RUN ifconfig
 
 RUN apk add --no-cache git
 COPY package*.json ./
